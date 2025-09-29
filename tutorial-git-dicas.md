@@ -48,7 +48,7 @@ git push -u origin aluno-seunome
 ## 5. Conectar o repositório do professor (upstream)
 Para receber as tarefas novas:
 ```bash
-git remote add upstream https://github.com/awescolar/dp-dw-2025.git
+git remote add upstream https://github.com/awescolar/designweb.git
 ```
 
 Muito importante fazer dessa forma e nunca alterar a branch master (main), pois ela vai trazer e manter todas as atividades que o professor passar.
