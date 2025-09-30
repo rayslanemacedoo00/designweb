@@ -59,7 +59,7 @@ body {
 }
 
 ```
--> resultado da saída CSS
+> resultado da saída CSS
 ```css
 body {
   background: #3498db;
@@ -75,7 +75,7 @@ body {
 Permite escrever seletores dentro de outros, representando a hierarquia do HTML.
 
 **Exemplo:**
-```
+```sass
 nav {
   background: #eee;
 
@@ -89,8 +89,8 @@ nav {
   }
 }
 ```
-**CSS gerado automaticamente:**
-```
+> resultada de saída CSS
+```css
 nav {
   background: #eee;
 }
@@ -102,6 +102,7 @@ nav a {
   text-decoration: none;
 }
 ```
+
 **Vantagens:**
 
 - Código mais organizado e limpo.
@@ -114,9 +115,9 @@ nav a {
 Você pode dividir seu CSS em arquivos menores e depois juntar tudo em um só para compilar.
 
 **Exemplo** (`style.scss`):
-```
-@import 'layout';
-@import 'design';
+```sass
+@use 'layout';
+@use 'design';
 ```
 ### Estrutura de pastas:
 ```
@@ -137,7 +138,7 @@ css/
 São blocos de código reutilizáveis que você cria uma vez e aplica em vários lugares.
 
 **Exemplo:**
-```
+```sass
 @mixin centralizar {
   display: flex;
   justify-content: center;
@@ -148,8 +149,16 @@ header {
   @include centralizar;
 }
 ```
-Vantagens:
+> saída CSS
+```css
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```
 
+**Vantagens:**
 Reutiliza código sem copiar e colar. Ideal para estilos repetitivos (centralização, botões, sombras).
 
 ## 7. Extends
@@ -158,7 +167,7 @@ Reutiliza código sem copiar e colar. Ideal para estilos repetitivos (centraliza
 Permite **herdar estilos de outra classe.**
 
 **Exemplo:**
-```
+```sass
 .botao {
   padding: 10px;
   border-radius: 5px;
@@ -170,10 +179,23 @@ Permite **herdar estilos de outra classe.**
   color: white;
 }
 ```
+> saída CSS
+```css
+.botao, .botao-primario {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.botao-primario {
+  background: blue;
+  color: white;
+}
+```
+
 **Vantagens:**
 
-Economiza código repetido.
-Cria famílias de estilos baseados em uma classe principal.
+- Economiza código repetido.
+- Cria famílias de estilos baseados em uma classe principal.
 
 ## 🔹 8. Estrutura recomendada
 
