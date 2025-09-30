@@ -49,7 +49,7 @@ O Sass recompila sozinho toda vez que você salvar.
 São “apelidos” para guardar valores (cor, fonte, tamanho).
 
 Exemplo:
-```
+```sass
 $primary-color: #3498db;
 $font-stack: 'Arial', sans-serif;
 
@@ -58,6 +58,13 @@ body {
   font-family: $font-stack;
 }
 
+```
+-> resultado da saída CSS
+```css
+body {
+  background: #3498db;
+  font-family: "Arial", sans-serif;
+}
 ```
 **Vantagens:**
 - Consistência visual (mesmas cores/fontes em todo site).
