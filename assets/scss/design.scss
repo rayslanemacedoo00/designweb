@@ -5,13 +5,21 @@ $font-texto : "IBM Plex Mono",
 monospace;
 
 /**    Especificando cores */
-$cor-bg-body: #1B1B1B;
+$cor-bg-body: #111111;
 $cor-bg-button: #3F8E00;
 $cor-text-title: #FFFFFF;
 $cor-text-body: #9C9C9C;
 $cor-border-button: #62BA1B;
 
+a{
+    text-decoration: none;
+}
+
 body {
+    gap: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     font-family: $font-texto;
     background-color: $cor-bg-body;
     color: $cor-text-body;
@@ -20,9 +28,85 @@ body {
 }
 
 .header {
-    .menu-navegacao {}
+    justify-content: space-between;
+    display: flex;
+    width: 80%;
+    background-color: #1b1b1b;
+    padding: 20px;
+}
 
-    .menu-social {}
+.navegacao1{
+    display: flex;
+    gap: 20px;
+}
+
+.navegacao1 a{
+    color: #9C9C9C;
+}
+
+.navegacao2 a{
+    color: #9C9C9C;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+}
+
+.texto-e-botao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botao{
+    color: white;
+    background-color: $cor-bg-button;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid $cor-border-button;
+    box-shadow: 0px 0px 20px $cor-border-button;
+    width: 50%;
+    text-align: center;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 50%;
+    list-style-type: none;
+    
+    li {
+        border: 1px solid #9C9C9C;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px #9C9C9C22;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        transition: box-shadow 0.2s;
+    }
+    li:hover {
+        box-shadow: 0px 0px 20px #9C9C9C55;
+    }
+}
+
+.botoes li{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 70%;
+    border: 1px solid $cor-bg-body;
+    text-align: center;
 }
 
 main {

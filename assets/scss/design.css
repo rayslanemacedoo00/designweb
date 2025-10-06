@@ -1,0 +1,176 @@
+/**    Especificando as fontes */
+/**    Especificando cores */
+a {
+  text-decoration: none;
+}
+
+body {
+  gap: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #111111;
+  color: #9C9C9C;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+.header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  background-color: #1b1b1b;
+  padding: 20px;
+}
+
+.navegacao1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.navegacao1 a {
+  color: #9C9C9C;
+}
+
+.navegacao2 a {
+  color: #9C9C9C;
+}
+
+main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+}
+
+.texto-e-botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.botao {
+  color: white;
+  background-color: #3F8E00;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #62BA1B;
+  -webkit-box-shadow: 0px 0px 20px #62BA1B;
+          box-shadow: 0px 0px 20px #62BA1B;
+  width: 50%;
+  text-align: center;
+}
+
+.botoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+  width: 50%;
+  list-style-type: none;
+}
+
+.botoes li {
+  border: 1px solid #9C9C9C;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px #9C9C9C22;
+          box-shadow: 0px 0px 10px #9C9C9C22;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: transparent;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.botoes li:hover {
+  -webkit-box-shadow: 0px 0px 20px #9C9C9C55;
+          box-shadow: 0px 0px 20px #9C9C9C55;
+}
+
+.botoes li {
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 70%;
+  border: 1px solid #111111;
+  text-align: center;
+}
+
+main .perfil h1 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 44px;
+}
+
+main .perfil h3 {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+main .perfil button {
+  color: #FFFFFF;
+  padding: 1em 3em;
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #62BA1B;
+  -webkit-box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+          box-shadow: 0 8px 30px 0 rgba(63, 142, 0, 0.5);
+}
+
+.lista-sem-estilo {
+  padding: 0;
+  list-style: none;
+}
+/*# sourceMappingURL=design.css.map */
