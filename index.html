@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página com Hierarquia Visual</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50">
-  <div class="max-w-lg mx-auto bg-white shadow-lg rounded-lg p-6 mt-10">
-    <h1 class="text-gray-800 text-5xl font-bold mb-4">Título </h1>
-    <h2 class="text-gray-800 text-2xl font-semibold mb-3">Subtítulo </h2>
-    <p class="text-gray-600 text-base leading-relaxed mb-4">
-        Este parágrafo apresenta o tema principal da página, explicando de forma clara e objetiva o propósito do conteúdo. A intenção é guiar o leitor logo no início, com uma leitura agradável e bem estruturada.
-    </p>
-    <p class="text-gray-600 text-base leading-relaxed">
-        Já este segundo parágrafo aprofunda a explicação, trazendo informações complementares. Ele reforça a ideia central e garante uma continuidade harmoniosa no estilo e no visual da página.
-    </p>
-  </div>
-<!--- A escolha dos tamanhos de texto nesta página segue o princípio de hierarquia tipográfica, 
-  que é essencial para guiar a leitura, reforçar a estrutura do conteúdo e proporcionar uma 
-  experiência visual clara e agradável.-->
+<body class="bg-gray-100">
+    <section class="max-w-6xl mx-auto bg-white shadow-inner border border-gray-300 p-8 mb-8 flex flex-row items-center gap-8">
+        <div class="text-content flex-1">
+            <h1 class="text-4xl font-bold mb-4">Título da Apresentação</h1>
+            <h2 class="text-2xl font-semibold mb-6">Subtítulo Informativo</h2>
+            <p class="text-lg leading-relaxed">
+                Este é um texto de exemplo para a seção de apresentação. Ele descreve o propósito ou o conteúdo da página de forma clara e objetiva.
+            </p>
+        </div>
+        <div class="image-content flex-1 flex justify-center">
+            <img class="rounded-lg shadow-md" src="https://picsum.photos/400" alt="Imagem de exemplo">
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto bg-white shadow-inner border border-gray-300 p-8 mb-8 flex flex-row-reverse items-center gap-8">
+        <div class="text-content flex-1">
+            <h1 class="text-4xl font-bold mb-4">Título da Apresentação</h1>
+            <h2 class="text-2xl font-semibold mb-6">Subtítulo Informativo</h2>
+            <p class="text-lg leading-relaxed">
+                Este é um texto de exemplo para a seção de apresentação. Ele descreve o propósito ou o conteúdo da página de forma clara e objetiva.
+            </p>
+        </div>
+        <div class="image-content flex-1 flex justify-center">
+            <img class="rounded-lg shadow-md" src="https://picsum.photos/400" alt="Imagem de exemplo">
+        </div>
+    </section>
+
+    <!-- Estrutura escolhida: Flexbox -->
+    <!-- Motivo: O Flexbox foi escolhido por sua simplicidade e eficiência para criar layouts com alinhamento e espaçamento entre itens em uma única dimensão (linha ou coluna). -->
+</body>
+</html>
