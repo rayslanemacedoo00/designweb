@@ -1,39 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
+    <title>Blocos de Interface Reutilizáveis - Cards</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-    <section class="max-w-6xl mx-auto bg-white shadow-inner border border-gray-300 p-8 mb-8 flex flex-row items-center gap-8">
-        <div class="text-content flex-1">
-            <h1 class="text-4xl font-bold mb-4">Título da Apresentação</h1>
-            <h2 class="text-2xl font-semibold mb-6">Subtítulo Informativo</h2>
-            <p class="text-lg leading-relaxed">
-                Este é um texto de exemplo para a seção de apresentação. Ele descreve o propósito ou o conteúdo da página de forma clara e objetiva.
-            </p>
-        </div>
-        <div class="image-content flex-1 flex justify-center">
-            <img class="rounded-lg shadow-md" src="https://picsum.photos/400" alt="Imagem de exemplo">
-        </div>
-    </section>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-6">
+            
+            <!-- Card 1 - VERMELHO -->
+            <div class="bg-red-100 border border-red-200 rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer focus:ring-2 focus:ring-red-500">
+                <h3 class="text-xl font-semibold text-red-800 mb-4">História de ed e lorraine warren</h3>
+                <p class="text-red-700 mb-4">
+                    Ed e Lorraine Warren foram um casal americano famoso por seu trabalho como investigadores paranormais e demonologistas. Ed era um investigador do oculto e escritor, enquanto Lorraine tinha habilidades como médium e clarividente. Juntos, fundaram a Sociedade de Pesquisas Psíquicas de Nova Inglaterra e ficaram conhecidos por investigar casos de supostas atividades paranormais.
 
-    <section class="max-w-6xl mx-auto bg-white shadow-inner border border-gray-300 p-8 mb-8 flex flex-row-reverse items-center gap-8">
-        <div class="text-content flex-1">
-            <h1 class="text-4xl font-bold mb-4">Título da Apresentação</h1>
-            <h2 class="text-2xl font-semibold mb-6">Subtítulo Informativo</h2>
-            <p class="text-lg leading-relaxed">
-                Este é um texto de exemplo para a seção de apresentação. Ele descreve o propósito ou o conteúdo da página de forma clara e objetiva.
-            </p>
-        </div>
-        <div class="image-content flex-1 flex justify-center">
-            <img class="rounded-lg shadow-md" src="https://picsum.photos/400" alt="Imagem de exemplo">
-        </div>
-    </section>
+Seu trabalho ganhou destaque principalmente a partir dos anos 1950, com casos famosos como o da família Perron em Rhode Island, que inspirou o filme "Invocação do Mal" (The Conjuring). Eles também estiveram envolvidos em outras investigações famosas, como o caso da "Boneca Annabelle" e a possessão de Arne Cheyenne Johnson, que inspirou "Invocação do Mal 2".
 
-    <!-- Estrutura escolhida: Flexbox -->
-    <!-- Motivo: O Flexbox foi escolhido por sua simplicidade e eficiência para criar layouts com alinhamento e espaçamento entre itens em uma única dimensão (linha ou coluna). -->
+Ed e Lorraine acreditavam que muitas manifestações paranormais eram causadas por espíritos malignos ou forças demoníacas, e buscavam ajudar as famílias afetadas com rituais de exorcismo e proteção espiritual. Apesar de sua fama, seus métodos e relatos são controversos e alvo de ceticismo por parte da comunidade científica.
+
+Mesmo assim, a influência do casal é grande na cultura popular e no campo do sobrenatural, com diversos livros, filmes e documentários retratando suas investigações e casos mais marcantes. Eles continuam sendo figuras emblemáticas para quem se interessa por fenômenos paranormais.
+                </p>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 focus:ring-2 focus:ring-red-500 cursor-pointer">Saiba Mais</button>
+            </div>
+
+            <!-- Card 2 - PRETO -->
+            <div class="bg-gray-100 border border-gray-300 rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer focus:ring-2 focus:ring-gray-800">
+                <h3 class="text-xl font-semibold text-gray-900 mb-4">A história de Anne frank</h3>
+                <p class="text-gray-800 mb-4">
+                    Anne Frank foi uma jovem judia alemã que ficou mundialmente conhecida por seu diário, no qual relatou sua vida durante a Segunda Guerra Mundial. Nascida em 1929, ela e sua família se esconderam em um anexo secreto em Amsterdã para escapar da perseguição nazista. Durante mais de dois anos, Anne escreveu sobre suas experiências, medos, esperanças e sonhos no diário, oferecendo um relato único e pessoal da vida sob o regime nazista.
+
+Seu diário é uma poderosa testemunha da brutalidade do Holocausto e da luta pela sobrevivência em meio a um dos períodos mais sombrios da história. Em 1944, o esconderijo foi descoberto, e Anne e sua família foram deportados para campos de concentração. Anne morreu no campo de Bergen-Belsen em 1945, pouco antes do fim da guerra.
+
+O diário foi publicado após a guerra por seu pai, Otto Frank, único membro da família a sobreviver. Hoje, o "Diário de Anne Frank" é um dos livros mais lidos no mundo, inspirando gerações a refletir sobre a tolerância, a humanidade e a importância da memória histórica.
+
+Anne Frank simboliza a voz das vítimas do Holocausto e a esperança de um mundo mais justo, mesmo diante das maiores adversidades.
+                </p>
+                <button class="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-800 focus:ring-2 focus:ring-gray-800 cursor-pointer">Explorar</button>
+            </div>
+
+            <!-- Card 3 - VERMELHO -->
+            <div class="bg-red-100 border border-red-200 rounded-lg shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer focus:ring-2 focus:ring-red-500">
+                <h3 class="text-xl font-semibold text-red-800 mb-4">O holocausto</h3>
+                <p class="text-red-700 mb-4">
+                    O Holocausto foi o genocídio sistemático promovido pelo regime nazista durante a Segunda Guerra Mundial, entre 1941 e 1945, que resultou na morte de aproximadamente seis milhões de judeus, além de milhões de outras vítimas, como ciganos, pessoas com deficiências, opositores políticos, homossexuais e outros grupos perseguidos. Esse massacre em massa ocorreu em vários países da Europa ocupados pelos nazistas.
+
+A perseguição começou com discriminação, leis antissemitas e exclusão social, mas rapidamente evoluiu para deportações em massa e assassinatos em campos de concentração e extermínio, como Auschwitz, Treblinka e Sobibor. Milhares de pessoas foram submetidas a condições desumanas, trabalhos forçados, torturas e experimentos cruéis.
+
+O Holocausto é um dos capítulos mais sombrios da história humana, evidenciando o extremo do preconceito, ódio e desumanização. Sobreviventes compartilharam suas histórias para que o mundo jamais esqueça as atrocidades cometidas, ressaltando a importância da tolerância, direitos humanos e combate ao ódio.
+
+A memória do Holocausto é fundamental para educar sobre os perigos do extremismo e para garantir que tais horrores nunca mais se repitam.
+                </p>
+                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 focus:ring-2 focus:ring-red-500 cursor-pointer">Descubra Mais</button>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
+<!-- acho que os cards servem para mostrar o que você tem de melhor(Algo em destaque) seja um produto legal, um post, uma publicidade da sua loja por exemplo, ou um serviço que vale a pena. Facilita a vida de quem visita seu site! -->
 </html>
