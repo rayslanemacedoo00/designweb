@@ -1,72 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Rayslane Macedo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-black text-white font-sans">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Landingpage - Infowebeti</title>
+</head>
+<body>
 
-    <header class="flex items-center justify-between px-10 py-6 bg-neutral-900">
-      <nav class="flex space-x-8 text-sm text-gray-300">
-        <a href="#" class="hover:text-white">Estudos de Casos</a>
-        <a href="#" class="hover:text-white">Trabalhos</a>
-        <a href="#" class="hover:text-white">Entre em contato</a>
-      </nav>
-
-      <div class="flex space-x-5 text-gray-300">
-        <a href="#" class="hover:text-white">in</a>
-        <a href="#" class="hover:text-white">Bē</a>
-      </div>
+    <header class="container mx-auto max-w-7xl flex justify-between pt-7 items-center">
+        <figure><img src="assets/logo.png" alt="Logo de Infoweb by turma Infowebeti"></figure>
+        <nav>
+            <menu class="flex gap-8 text-gray-500">
+                <li><a class="hover:bg-sky-700 hover:text-white" href="#sobre">Sobre</a></li>
+                <li><a class="hover:bg-sky-700 hover:text-white" href="#professores">Professores</a></li>
+                <li><a class="hover:bg-sky-700 hover:text-white" href="#alunos">Alunos</a></li>
+                <li><a class="hover:bg-sky-700 hover:text-white" href="#projetos">Projetos</a></li>
+                <li><a class="hover:bg-sky-700 hover:text-white" href="#documentos">Documentos</a></li>
+            </menu>
+        </nav>
     </header>
+    <main class="container mx-auto max-w-7xl">
+        
+        <!-- hero -->
+        <section class="flex justify-center flex-col items-center p-20 my-20 bg-gray-100 rounded-lg text-center">
+            <h1 class="text-5xl max-w-140 font-semibold">Depois de muita espera, ela finalmente chegou!</h1>
+            <p class="my-10 max-w-140">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
 
-    <section class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-10 py-20 gap-12">
-   
-      <div class="flex-1">
-        <h1 class="text-4xl font-bold mb-2">Rayslane Macedo</h1>
-        <p class="text-lg text-gray-400 mb-8">UX e Dev Front-end</p>
-        <p class="text-gray-400 leading-relaxed mb-10 max-w-lg">
-          Sou um híbrido raro: <span class="text-white font-medium">Design Systems + Engenharia de Produto.</span>
-          Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe.
-          Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.
-        </p>
+            <div class="flex justify-center gap-4">
+                <a href="#" class="bg-sky-700 text-white py-4 px-8">Ser feliz agora</a>
+                <a href="#" class="bg-sky-700 text-white py-4 px-8">Ficar triste</a>
+            </div>
 
-        <a href="#"
-          class="inline-block bg-lime-500 hover:bg-lime-600 text-black font-semibold px-6 py-3 rounded-lg shadow-md transition">
-          Vamos trabalhar juntos &rsaquo;
-        </a>
+        </section>
 
-        <div class="mt-12">
-          <p class="text-sm text-gray-400 mb-4">Trabalhou em:</p>
-          <div class="flex flex-wrap gap-4">
-            <div class="flex items-center justify-center bg-neutral-900 border border-neutral-700 rounded-lg px-6 py-3">
-              <span class="text-white font-semibold">ClickUp</span>
+        <!-- logos -->
+         <section>
+            <ul class="flex justify-between">
+                <li><img src="assets/nasa.svg" alt=""></li>
+                <li><img src="assets/spotify.svg" alt=""></li>
+                <li><img src="assets/google.svg" alt=""></li>
+                <li><img src="assets/facebook.svg" alt=""></li>
+                <li><img src="assets/instagram.svg" alt=""></li>
+                <li><img src="assets/microsoft.svg" alt=""></li>
+                <li><img src="assets/dropbox.svg" alt=""></li>
+            </ul>
+         </section>
+
+         <!-- destaques -->
+          <section class="flex gap-14   my-20 text-gray-700 ">
+            <div class="flex gap-4 items-baseline">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
             </div>
-            <div class="flex items-center justify-center bg-neutral-900 border border-neutral-700 rounded-lg px-6 py-3">
-              <span class="text-white font-semibold">Dropbox</span>
+            <div>
+                <strong>Ela é bonita</strong>
+                <p>Além de linda, ela é a mais top.</p>
             </div>
-            <div class="flex items-center justify-center bg-neutral-900 border border-neutral-700 rounded-lg px-6 py-3">
-              <span class="text-white font-semibold">PAYCHEX</span>
+            <div class="flex gap-4 items-baseline">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
             </div>
-            <div class="flex items-center justify-center bg-neutral-900 border border-neutral-700 rounded-lg px-6 py-3">
-              <span class="text-white font-semibold">elastic</span>
+            <div>
+                <strong>O azul destaque</strong>
+                <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
             </div>
-            <div class="flex items-center justify-center bg-neutral-900 border border-neutral-700 rounded-lg px-6 py-3">
-              <span class="text-white font-semibold">stripe</span>
+            <div class="flex gap-4 items-baseline">
+                <i class="fa-solid fa-chevron-right text-sm"></i>
             </div>
+            <div>
+                <strong>Webeti</strong>
+                <p>O nosso mascote é um gênio da informática.</p>
+            </div>
+          </section>
+          <!-- mockup da camiseta da turma -->
+          <figure><img src="assets/mockup.svg" class="w-full" alt="Imagem destaque da camiseta"></figure>
+          <div class="flex justify-center flex-col items-center p-1 my-10 text-center">
+            <h2 class="text-4xl max-w-140 font-medium">Alunos que já compraram</h2>
+            <p class="my-5 max-w-140">Junte aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
           </div>
-        </div>
-      </div>
+          
 
-      <div class="flex-1 flex justify-center">
-        <img
-          src="https://i.postimg.cc/c42GD2r4/Si-no-ay-sol-no-ay-playa.jpg"
-          alt="Foto de perfil"
-          class="w-72 h-72 rounded-full object-cover border-4 border-neutral-700 shadow-xl"
-        />
-      </div>
-    </section>
+          <!--metricas-->
+          <section class="grid grid-cols-3 gap-4 text-center my-10">
+            <div>
+                <h3 class="text-5xl font-medium pb-5">243+</h3>
+                <p></p>Alunos felizes</span>
+            </div>
+            <div>
+                <h3 class="text-5xl font-medium pb-5">38.3903+</h3>
+                <p></p>Alunos adquiridos</span>
+            </div>
+            <div>
+                <h3 class="text-5xl font-medium pb-5">154+</h3>
+                <p></p>Alunos tristes</span>
+            </div>
+          </section>
 
-  </body>
+
+    </main>
+    
+</body>
 </html>
