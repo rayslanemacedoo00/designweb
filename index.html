@@ -3,63 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard - Version 1.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
 </head>
-<body>
+    <nav class="flex justify-between p-4 bg-[#F6F6F6] border ">
+        <img src="assets/img/Vector.png" alt="Logo da Agência Web">
+        <img src="assets/img/right.png" alt="">
+    </nav>
 
-    <header class="header">
-        <nav class="container dividir-extremidades">
-            <ul class="menu menu-navegacao display-flex lista-sem-estilo">
-                <li><a href="#">Estudos de caso</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Entre em contato</a></li>
-            </ul>
-            <ul class="menu menu-social display-flex lista-sem-estilo">
-                <li>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-behance"></i></a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+<body class="grid grid-rows-[auto_1fr_auto] min-h-screen font-[Sora]">
 
-    <main>
+  <div class="flex flex-row gap-4">
+    <header class="flex">
+      <aside class="text-[#828282] p-10 border-r pr-20">
+        <p class="text-3xl text-center font-semibold pt-5 text-gray-600">Canal do cliente</p>
+        <h1 class="flex gap-4 pl-5 pt-[40px] font-semibold"><i class="fa-solid fa-shop"></i>Loja de projetos</h1>
+        <ul class="pl-5">
+          <li class="p-4 text-blue-800 font-bold">Dashboard</li>
+          <li class="p-4">Compra de créditos</li>
+          <li class="p-4">Concluídos</li>
+        </ul>
+        <h1 class="flex gap-4 pl-5 pt-[50px] font-semibold"><i class="fa-solid fa-chart-pie"></i>Gestão de projetos</h1>
+        <h1 class="flex gap-4 pl-5 pt-[50px] font-semibold"><i class="fa-solid fa-bullhorn"></i>Campanhas</h1>
+      </aside>
 
-        <section class="container">
-            <div class="perfil">
-                <h1>Bruno Nakamura</h1>
-                <h3>UX / Dev Front-end</h3>
-                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
-                <button>
-                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i></i>
-                </button>
-            </div>
-            <figure class="foto">
-                <img src="assets/img/perfil.png" alt="Foto do Bruno Nakamura">
-            </figure>
-        </section>
-        <section class="container alinhar-coluna last-jobs">
-            <h5>Trabalhou em:</h5>
-            <ul class="lista-sem-estilo display-flex">
-                <li><img src="assets/img/img-job-1.svg" alt=""></li>
-                <li><img src="assets/img/img-job-2.svg" alt=""></li>
-                <li><img src="assets/img/img-job-3.svg" alt=""></li>
-                <li><img src="assets/img/img-job-4.svg" alt=""></li>
-                <li><img src="assets/img/img-job-5.svg" alt=""></li>
-            </ul>
-        </section>
+  </header>
 
-    </main>
+
+
+  
+  <main class="max-w-7xl ml-[40px]">
+    <section class="max-w-7xl mt-[40px] ml-[40px]">
+        <img src="assets/img/bannergrande1.png" alt="Imagem ilustrativa de black friday - oferta de projetos" class="w-full">
+    </section>
+    <h1 class="text-[#000] font-semibold text-xl mb-[24px] mt-[30px]">Compre pontos e distribua como quiser</h1>
+    <div class="grid grid-cols-3 gap-[32px]">
+      <div class="grid grid-rows-[auto_1fr_auto_auto] border border-[#CCC] border-solid rounded-lg p-[24px]">
+        <img src="assets/img/bannerpeq1.png" alt="Design de App" class="mb-[16px] w-full">
+        <p class="text-[#808080] text-sm font-normal mb-[16px]">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
+        <div class="grid grid-cols-2 items-baseline">
+              <div>
+              <h3 class="font-bold text-base text-[#000]">Comprar créditos</h3>
+              </div>
+          <i class="fa-solid fa-chevron-right justify-self-end"></i>
+          </div>
+          <p class="text-[#808080] text-sm font-normal">5 créditos por R$10.000,00</p>
+      </div>
+      <div class="grid grid-rows-[auto_1fr_auto_auto] border border-[#CCC] border-solid rounded-lg p-[24px]">
+          <img src="assets/img/bannerpeq2.png" alt="Sistema PDV_" class="mb-[16px] w-full">
+          <p class="text-[#808080] text-sm font-normal mb-[16px]">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
+          <div class="grid grid-cols-2 items-baseline">
+              <div>
+              <h3 class="font-bold text-base text-[#000]">Comprar créditos</h3>
+              </div>
+          <i class="fa-solid fa-chevron-right justify-self-end"></i>
+          </div>
+          <p class="text-[#808080] text-sm font-normal">21 créditos por R$120.000,00</p>
+      </div>
+      <div class="grid grid-rows-[auto_1fr_auto_auto] border border-[#CCC] border-solid rounded-lg p-[24px]">
+          <img src="assets/img/bannerpeq3.png" alt="Sites Wordpress" class="mb-[16px] w-full">
+          <p class="text-[#808080] text-sm font-normal mb-[16px]">Descontos cumulativos para projetos em Wordpress para 2025.</p>
+          <div class="grid grid-cols-2 items-baseline">
+              <div>
+              <h3 class="font-bold text-base text-[#000]">Comprar créditos</h3>
+              </div>
+          <i class="fa-solid fa-chevron-right justify-self-end"></i>
+          </div>
+          <p class="text-[#808080] text-sm font-normal">21 créditos por R$12.000,00</p>
+      </div>
+      </div>
+  </main>
+
+  </div>
     
+    <footer class="mt-[30px]">
+        <hr class="text-[#CCC]">
+        <div class="grid grid-rows-1 justify-self-end">
+        <img src="assets/img/Vector (1).png" alt="Logo da AgênciaWeb" class="my-[16px] mx-[56px]">
+        </div>
+    </footer>
 </body>
 </html>
