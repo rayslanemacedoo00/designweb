@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Créditos</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body class="font-[sora]">
+    <header class="flex justify-between border-gray-500 border-b-1 py-8 px-6">
+        <figure>
+            <img src="assets/img/agencia1.png" alt="Imagem AWE">
+        </figure>
+
+        <figure class="flex flex-row gap-4 px-4">
+            <div class="text-white font-semibold bg-orange-300 flex align-center p-3 rounded-sm">LD</div>
+            <div class="whitespace-nowrap">
+                <p class="font-semibold">John Doe</p>
+                <p class="font-normal text-gray-400">Agência Web</p>
+            </div>
+        </figure>
+    </header>
+    
+        <main class="flex flex-row gap-10">
+            <aside class="mx-6 pt-8 border-gray-500 border-r-1 pr-10">
+                <div class="flex flex-col gap-4 text-gray-400 font-normal">
+                    <h1 class="text-2xl font-semibold text-gray-600">Canal do Cliente</h1>
+    
+                    <ul class="flex flex-col gap-6">
+                        <li class=" font-bold"><a class="flex gap-2" href="#"><img src="assets/img/casa.png" alt="casa"> Lojas de Projetos</a></li>
+                        <ul class="flex flex-col gap-4 ml-4">
+                            <li><a href="dashboard.html">Dashboard</a></li>
+                            <li class="text-blue-700 font-semibold"><a href="compras.html">Compra de Créditos</a></li>
+                            <li><a href="#">Concluídos</a></li>
+                        </ul>
+                        <li><a class="flex gap-2" href="#"><img src="assets/img/pizza.png" alt="pizza">Gestão de Projetos</a></li>
+                        <li><a class="flex gap-2" href="#"><img src="assets/img/altofalante.png" alt="altofalante">Campanhas</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="pt-8">
+                <div class="flex flex-col gap-4">
+                    <ul class="flex flex-row gap-4">
+                        <li><a href="#"><span class="underline text-gray-600">Loja de Projetos</span> <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#"><span class="underline text-gray-600">Comprar Créditos</span><i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a href="#"><span class="text-gray-400">Compra de Créditos</span></a></li>
+                    </ul>
+                    <h1 class="text-3xl font-bold">Compra de pontos base</h1>
+                </div>
+
+                <div class="flex flex-row gap-10 my-6"> 
+                    <div class="p-10 flex flex-col gap-5 bg-gray-100 rounded-xl">
+                        <h2 class="text-xl font-bold">Limite mensal</h2>
+                        <p>Confira a quantidade de pontos disponível para compra</p>
+                        <figure>
+                            <img src="assets/img/barra.png" alt="Barra de dados">
+                        </figure>
+                        <div class="flex flex-row justify-between">
+                            <div>
+                                <h3 class="text-gray-500 font-semibold">Comprado esse mês</h3>
+                                <p class="font-bold">100 créditos</p>
+                            </div>
+                            <div class="flex flex-col items-end">
+                                <h3 class="text-gray-500 font-semibold">Seu limite mensal</h3>
+                                <p class="font-bold">2.000 créditos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-10 flex flex-col gap-6 bg-gray-100 rounded-xl">
+                        <h2 class="text-xl font-bold">Informações</h2>
+                        <ul class="flex flex-col gap-4">
+                            <li><i class="fa-solid fa-credit-card text-blue-800"></i> Valor mínimo de <span class="font-bold">100 créditos</span></li>
+                            <li><i class="fa-solid fa-calendar text-blue-800"></i>Validade <span class="font-bold">24 meses</span></li>
+                            <li><i class="fa-solid fa-dollar-sign text-blue-800"></i>Limite de compra mensal <span class="font-bold">2000 créditos</span> </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-30 my-6 p-10 bg-gray-100 rounded-sm">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-xl font-bold">Quantidade de créditos para compra</h2>
+                        <div class="flex flex-col gap-4 text-center">
+                            <p class="text-3xl font-bold"><i class="fa-solid fa-plus"></i> <span>100</span> <i class="fa-solid fa-minus"></i></p>
+                            <p>Digite o valor aproximado</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-xl font-bold">Total em reais</h2>
+                        <p class="text-3xl font-bold">R$ 20.000,00</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6 my-6">
+                    <h2 class="text-xl font-bold">Mais informações sobre o produto <i class="fa-solid fa-angle-down"></i></h2>
+                    <p class="max-w-[794px] text-gray-400"><span class="font-semibold">ATENÇÃO:</span> A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.</p>
+                </div>
+            </div>   
+        </main>
+    </div>
+
+    <footer class="flex flex-row border-t-1 border-gray-500 justify-between p-5">
+        <a href="#" class="text-blue-800 px-6 py-4 text-xl font-semibold">Voltar</a>
+        <section class="flex flex-row gap-4">
+            <a href="#" class="text-blue-800 px-16 py-4 text-xl border border-blue-800 font-semibold rounded-lg">Adicionar ao carrinho</a>
+        <a href="#" class="text-white py-4 text-xl bg-blue-800 rounded-lg px-16 font-semibold">Continuar <i class="fa-solid fa-arrow-right"></i></a>
+        </section>
+    </footer>
+</body>
+</html>
