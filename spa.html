@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br" 
+      x-data="{ 
+          tab: 'home', 
+          dark: false 
+      }"
+      :data-theme="dark ? 'dracula' : 'nigth'">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="min-h-screen transition-colors">
+    <nav class="navbar bg-base-100 shadow-lg px-8">
+        <div class="flex-1 font-bold text-xl">Dev Portfolio</div>
+
+        
+        <div class="flex-none gap-2">
+        
+          <button 
+            @click="tab = 'home'" 
+            class="btn btn-sm btn-ghost"
+            :class="{ 'btn-active': tab === 'home' }">
+            Home
+          </button>
+      
+          <button 
+            @click="tab = 'home'" 
+            class="btn btn-sm btn-ghost"
+            :class="{ 'btn-active': tab === 'home' }">
+            Sobre
+          </button>
+
+          <button 
+            @click="tab = 'home'" 
+            class="btn btn-sm btn-ghost"
+            :class="{ 'btn-active': tab === 'home' }">
+            contato
+          </button>
+
+          <!-- Botão PROJETOS -->
+          <button 
+            @click="tab = 'projetos'" 
+            class="btn btn-sm btn-ghost"
+            :class="{ 'btn-active': tab === 'projetos' }">
+            Projetos
+          </button>gigg
+          
+          <!-- Botão de Mudar o Dark Mode -->
+          <input type="checkbox" class="toggle" 
+                 x-model="dark" />
+        </div>
+      </nav>
+
+      <main class="p-10 max-w-5xl mx-auto">
+
+        <!-- SEÇÃO HOME -->
+        <div x-show="tab === 'home'" 
+             x-transition:enter.duration.500ms>
+             
+            <div class="hero min-h-[50vh] bg-base-200 rounded-box">
+                <div class="hero-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="text-5xl font-bold">Olá, eu sou Dev</h1>
+                        <button @click="tab = 'contato'" 
+                                class="btn btn-primary mt-6">
+                            Fale Comigo
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+          
+            <!-- O MODAL -->
+            <div x-show="modal" 
+                 class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
+                 x-transition.opacity>
+                 
+                 <div @click.outside="modal = false" 
+                      class="bg-base-100 p-8 rounded-lg">
+                    <h3>Detalhes...</h3>
+                    <button @click="modal = false" class="btn">X</button>
+                 </div>
+            </div>
+          </div>
+    </main>
+
+</body>
+</html>
