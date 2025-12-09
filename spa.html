@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<html lang="pt-br" 
-      x-data="{ 
-          tab: 'home', 
-          dark: false 
-      }"
-      :data-theme="dark ? 'dracula' : 'nigth'">
+<html lang="pt-br" x-data="{  tab: 'home',  dark: false  }":data-theme="dark ? 'dracula' : 'nigth'">
+  <head>
 
-<head>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -28,26 +23,20 @@
           </button>
       
           <button 
-            @click="tab = 'home'" 
+            @click="tab = 'sobre'" 
             class="btn btn-sm btn-ghost"
             :class="{ 'btn-active': tab === 'home' }">
             Sobre
           </button>
 
           <button 
-            @click="tab = 'home'" 
+            @click="tab = 'contato'" 
             class="btn btn-sm btn-ghost"
             :class="{ 'btn-active': tab === 'home' }">
             contato
           </button>
 
-          <!-- Botão PROJETOS -->
-          <button 
-            @click="tab = 'projetos'" 
-            class="btn btn-sm btn-ghost"
-            :class="{ 'btn-active': tab === 'projetos' }">
-            Projetos
-          </button>gigg
+         
           
           <!-- Botão de Mudar o Dark Mode -->
           <input type="checkbox" class="toggle" 
@@ -72,10 +61,74 @@
                     </div>
                 </div>
             </div>
-    
         </div>
-    
-          
+        
+    <!---SOBRE-->
+    <div x-show="tab === 'sobre'" x-transition x-data="{ ativo: 1 }" class="space-y-2 mt-4">
+      <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="acc" @click="ativo = 1" checked />
+          <div class="collapse-title text-xl font-medium">
+            Experiências
+          </div>
+          <div class="collapse-content">
+            <p>Desenvolvedora.</p>
+          </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="acc" @click="ativo = 2" />
+          <div class="collapse-title text-xl font-medium">Formação</div>
+          <div class="collapse-content"><p>IFRN - Informática para internet.</p></div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="acc" @click="ativo = 1" checked />
+        <div class="collapse-title text-xl font-medium">
+          Perguntas Frequentes
+        </div>
+        <div x-data="{ ativo: null }" class="collapse-content">
+          <ul>
+            <li>
+              <button @click="ativo = 1">Pergunta</button>
+              <div x-show="ativo === 1">Respostas</div>
+            </li>
+            <li>
+              <button @click="ativo = 1">Pergunta</button>
+              <div x-show="ativo === 1">Respostas</div>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+      </div>
+  </div>
+
+    </div>
+    <!-- CONTATO (FORM) -->
+    <div x-show="tab === 'contato'" x-transition 
+    x-data="{ email: '', msg: '', enviado: false }" class="max-w-md mx-auto mt-8 bg-base-200 p-6 rounded-xl">
+   
+   <div class="form-control">
+       <label class="label">Email</label>
+       <input x-model="email" class="input input-bordered">
+   </div>
+   
+   <div class="form-control mt-4">
+       <label class="label">Mensagem</label>
+       <textarea x-model="msg" class="textarea textarea-bordered"></textarea>
+   </div>
+
+   <div class="mt-6">
+       <button @click="enviado = true; email=''; msg=''" 
+               :disabled="!email.includes('@') || msg.length < 5"
+               class="btn btn-primary w-full">Enviar</button>
+   </div>
+
+   <div x-show="enviado" x-transition class="alert alert-success mt-4 shadow-lg">
+       <span>Mensagem enviada com sucesso!</span>
+   </div>
+</div>    
+
             <!-- O MODAL -->
             <div x-show="modal" 
                  class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
