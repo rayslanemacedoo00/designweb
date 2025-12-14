@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade18</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="p-4">
+
+    <div x-data="{ mostrar: false }" class="max-w-xl">
+
+        <p 
+            :class="mostrar ? '' : 'line-clamp-2'"
+            class="overflow-hidden"
+        >
+           COMO UMA ONDA - Lulu Santos: 
+    do que foi será
+    De novo do jeito que já foi um dia
+    Tudo passa, tudo sempre passará!
+    A vida vem em ondas, como um mar
+    Num indo e vindo infinito,
+    Tudo o que se vê não é
+    Igual ao que a gente viu há um segundo
+    Tudo muda o tempo todo no mundo Não adianta fugir
+    Nem mentir pra si mesmo agora
+    Há tanta vida lá fora
+    Aqui dentro, sempre
+
+    Como uma onda no mar
+    Como uma onda no mar
+    Como uma onda no mar
+    Como uma onda no
+        </p>
+
+        <button 
+            @click="mostrar = !mostrar"
+            class="mt-2 px-3 py-1 bg-gray-200 rounded"
+            x-text="mostrar ? 'Ler menos' : 'Ler mais'"
+        ></button>
+
+    </div>
+
+</body>
+</html>
