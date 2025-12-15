@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade19</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="p-4">
+    <div x-data="{ cor: 'verde' }" class="flex flex-col items-center gap-3">
+
+        <p 
+            x-text="cor"
+            :class="{
+                'text-green-600': cor === 'verde',
+                'text-yellow-500': cor === 'amarelo',
+                'text-red-600': cor === 'vermelho'}"></p>
+        
+       
+        <button @click="cor = cor === 'verde' ? 'amarelo' : cor === 'amarelo' ? 'vermelho' : 'verde'"
+            class="px-6 py-2 bg-gray-200 rounded"
+        >
+            Mudar
+        </button>
+
+    </div>
+</body>
+</html>
