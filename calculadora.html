@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Orçamento</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+<div x-data="{
+    servicos: [],
+    nome: '',
+    valor: 0
+}">
+
+    <h2>Orçamento de Serviços</h2>
+
+    <input type="text" placeholder="Serviço" x-model="nome">
+    <input type="number" placeholder="Valor" x-model.number="valor">
+
+    <button 
+        @click="
+            if (nome && valor > 0) {
+                servicos.push({ nome: nome, valor: valor })
+                nome = ''
+                valor = 0
+            }
+        ">
+        Adicionar
+    </button>
+
+    <ul>
+        <template x-for="(s, i) in servicos" :key="i">
+            <li>
+                <span x-text="s.nome"></span> -
+                <span x-text="'R$ ' + s.valor"></span>
+            </li>
+        </template>
+    </ul>
+
+    <p>
+        <strong>Total:</strong>
+        <span x-text="
+            'R$ ' + servicos.reduce(
+                (total, item) => total + item.valor, 0
+            )
+        "></span>
+    </p>
+
+</div>
+
+</body>
+</html>
